@@ -5,3 +5,8 @@ body,
     margin: 0;
     padding: 0;
 }
+/* 设置Home组件中的Main主体内容中的导航和内容的上下间距别挨太近 */
+.el-breadcrumb {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
