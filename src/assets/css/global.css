@@ -4,6 +4,8 @@ body,
     height: 100%;
     margin: 0;
     padding: 0;
+    /* 最小宽度是1366px */
+    min-width: 1366px;
 }
 /* 设置Home组件中的Main主体内容中的导航和内容的上下间距别挨太近 */
 .el-breadcrumb {

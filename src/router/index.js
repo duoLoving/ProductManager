@@ -8,6 +8,10 @@ import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 // User组件,显示在Home的主体内容区域占位符
 import Users from '../components/user/Users.vue'
+// Rights组件,权限列表,显示在Home的主体内容区域占位符
+import Rights from '../components/power/Rights.vue'
+// Roles组件,角色列表,也是显示在Home站位
+import Roles from '../components/power/Roles.vue'
 
 Vue.use(VueRouter)
 
@@ -20,7 +24,9 @@ const routes = [
     redirect: '/welcome', // 会在Home组件上的占位符的位置上显示需要的组件
     children: [
       { path: '/welcome', component: Welcome },
-      { path: '/users', component: Users }
+      { path: '/users', component: Users },
+      { path: '/rights', component: Rights },
+      { path: '/roles', component: Roles }
     ]
   }
 ]
